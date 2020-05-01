@@ -1,0 +1,131 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap');
+#school_app {
+  font-family: 'Merriweather', serif;
+  background-color: floralwhite;
+  #mainPageHeader {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(232, 129, 130, 0.8),
+        rgba(240, 212, 138, 0.8)
+      ),
+      url("assets/cover.jpg") ;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+  
+    #mainNavbar {
+      .bp3-button {
+        color: white;
+        &:hover {
+          background-color: white;
+          color: #e9393a;
+          .bp3-icon {
+            color: #e9393a;
+          }
+        }
+      }
+      .bp3-icon {
+        color: white;
+      }
+    }
+    .bp3-navbar {
+      background-color: #e9393a;
+      box-shadow: none;
+    }
+    .selected{
+      border: 1px solid black !important;
+    }
+    #homeButton {
+      background-color: transparent;
+      background-image: none;
+      width: fit-content;
+      text-align: center;
+      box-shadow: none;
+      border: 1px solid #e9393a;
+      margin-bottom: 10px;
+      border-radius: 0px;
+      color: #e9393a;
+      &:hover {
+        background-color: #e9393a;
+        color: white;
+      }
+    }
+    #logoPart {
+      #imageContainer {
+        display: flex;
+        // margin-top: 10px;
+        justify-content: center;
+      }
+    }
+  }
+  #goals {
+    font-weight: 500;
+    color: #e9393a;
+  }
+  #vision {
+    font-size: 20px;
+    font-family: monospace;
+  }
+  #cards_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    #mainCards {
+      background-color: #e9393a;
+      margin-top: 40px;
+      width: 30%;
+    }
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+    #cardTitles {
+      display: flex;
+      justify-content: center;
+      color: #e9393a;
+      font-weight: 500;
+      font-size: 29px;
+      text-align: center;
+      border: 5px solid #e9393a;
+      position: relative;
+      top: -40px;
+      padding: 10px 20px;
+      background-color: floralwhite;
+      // text-shadow: 1px 1px 1px #111;
+    }
+    .card {
+      border: 5px solid #e9393a !important;
+      box-shadow: 5px 10px 8px 2px #b8b7b7;
+      // border-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      cursor: pointer;
+      &:hover{
+        transition: 1s transform;
+        transform: scale(1.1);
+      }
+
+      .card-header {
+        background-color: transparent;
+        border: none !important;
+        z-index: 1;
+      }
+      .card-body {
+        background-color: transparent;
+      }
+    }
+  }
+  blockquote{
+    display: flex;
+    flex-direction: column;
+  }
+}
